@@ -1,14 +1,14 @@
 <template>
-  <the-navigation title="Kroon"></the-navigation>
+  <the-header title="Kroon"></the-header>
   <main>
     <router-view></router-view>
   </main>
 </template>
 <script>
-import TheNavigation from './layouts/TheHeader.vue';
+import TheHeader from './layouts/TheHeader.vue';
 export default {
   components: {
-    TheNavigation
+    TheHeader
   }
 };
 </script>

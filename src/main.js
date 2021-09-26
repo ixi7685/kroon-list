@@ -4,23 +4,23 @@ import BaseCard from './UI/BaseCard.vue';
 import BaseButton from './UI/BaseButton.vue';
 import BaseModal from './UI/BaseModal.vue';
 import App from './App.vue';
-import Home from './list/Base.vue';
+import Base from './list/Base.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', redirect: '/pagination' },
     {
       path: '/pagination',
-      name: 'Home',
-      component: Home,
-    },],
-    scrollBehavior() {
-      document.getElementById('app').scrollIntoView();
+      name: 'Base',
+      component: Base
+    }
+  ],
+  scrollBehavior() {
+    document.getElementById('app').scrollIntoView();
   }
+});
 
-})
-
-const app = createApp(App)
+const app = createApp(App);
 
 app.component('base-card', BaseCard);
 app.component('base-button', BaseButton);

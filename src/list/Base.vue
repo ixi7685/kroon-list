@@ -43,7 +43,7 @@
       </base-button>
     </div>
   </div>
-  <base-modal @close="hideDialog" :open="dialogIsVisible" :avatar="avatar">
+  <base-modal :open="dialogIsVisible" :avatar="avatar">
     <img style="width:16rem;height:16rem" :src="`${avatar}`" />
   </base-modal>
 </template>
@@ -101,27 +101,20 @@ export default {
     },
     changeNumber(num) {
       this.pageNum = num;
-
       this.results = [];
-
       this.$router.push({
         path: this.$route.path,
         query: { pageNum: this.pageNum }
       });
 
       this.numberOfPages = [1, 2, 3, 4, 5];
-
       if (num > 5) {
-
         this.numberOfPages = [];
-
         var startNum = num - 4;
-
         for (var i = startNum; i <= num; i++) {
           this.numberOfPages.push(i);
         }
       }
-
       this.loadList(this.pageNum);
     },
     selectRow(row) {
@@ -130,7 +123,6 @@ export default {
     showDialog(avatar) {
       this.avatar = avatar;
       this.dialogIsVisible = true;
-
       setTimeout(() => (this.dialogIsVisible = false), 1000);
     },
     hideDialog() {
