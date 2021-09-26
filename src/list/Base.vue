@@ -25,15 +25,11 @@
       </base-card>
     </section>
     <div class="pagination-wrapper">
-      <base-button
-        @click="changeNumber(pageNum - 1)"
-        :disabled="pageNum == 1"
-      >
+      <base-button @click="changeNumber(pageNum - 1)" :disabled="pageNum == 1">
         -
       </base-button>
       <span v-for="(item, index) in numberOfPages" :key="index">
         <base-button
-          
           :class="[pageNum == item ? 'active' : '']"
           @click="changeNumber(item)"
           >{{ item }}</base-button
@@ -141,7 +137,7 @@ export default {
         this.dialogIsVisible = false;
       }, 1000);
       this.dialogIsVisible = false;
-    },
+    }
   },
   mounted() {
     this.changeNumber(1);
@@ -165,11 +161,21 @@ export default {
   color: #055c0a;
 }
 
-.disabled{
-  color:white
+.disabled {
+  color: white;
 }
 
 .img_filter {
   filter: brightness(50%);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  button {
+    padding: 0.5rem 0.8rem;
+  }
 }
 </style>
