@@ -112,6 +112,7 @@ export default {
       this.numberOfPages = [1, 2, 3, 4, 5];
 
       if (num > 5) {
+
         this.numberOfPages = [];
 
         var startNum = num - 4;

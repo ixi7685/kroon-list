@@ -20,19 +20,19 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
 dialog {
   position: fixed;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   top: 40vh;
   width: 18rem;
   height: 18rem;
-  left: calc(50% - 10rem);
-  margin: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   z-index: 100;
   border: none;
 }
