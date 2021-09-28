@@ -3,7 +3,6 @@
     <slot></slot>
   </div>
 </template>
-
 <style scoped>
 .card {
   margin: 1rem auto;
@@ -14,6 +13,4 @@
   display: flex;
   overflow: hidden;
 }
-
-
 </style>

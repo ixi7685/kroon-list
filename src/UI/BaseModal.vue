@@ -6,7 +6,6 @@
   </dialog>
   </transition>
 </template>
-
 <script>
 export default {
 
@@ -14,7 +13,6 @@ export default {
   emits: ['close'],
 };
 </script>
-
 <style scoped>
 .backdrop {
   position: fixed;
@@ -58,5 +56,4 @@ dialog {
     transform: translateY(0) scale(1);
   }
 }
-
 </style>

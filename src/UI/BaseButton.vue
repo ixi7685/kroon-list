@@ -3,7 +3,6 @@
     <slot></slot>
   </button>
 </template>
-
 <style scoped>
 button {
   font: inherit;

@@ -47,7 +47,6 @@
     <img style="width:16rem;height:16rem" :src="`${avatar}`" />
   </base-modal>
 </template>
-
 <script>
 import { OrbitSpinner } from 'epic-spinners';
 export default {
@@ -137,7 +136,6 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .pagination-wrapper {
   display: flex;
@@ -161,7 +159,7 @@ export default {
 .img_filter {
   filter: brightness(50%);
 }
-p{
+p {
 word-break: break-all;
   white-space: normal;
   flex: 1;
