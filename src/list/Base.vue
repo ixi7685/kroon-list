@@ -19,9 +19,9 @@
           style="width:70px;height:70px;margin-right:25px"
           :src="`${result.avatar}`"
         />
-        <h5 :class="[result.id == selectedCard ? 'highlight' : '']">
+        <p :class="[result.id == selectedCard ? 'highlight' : '']">
           {{ result.url }}
-        </h5>
+        </p>
       </base-card>
     </section>
     <div class="pagination-wrapper">
@@ -161,7 +161,11 @@ export default {
 .img_filter {
   filter: brightness(50%);
 }
-
+p{
+word-break: break-all;
+  white-space: normal;
+  flex: 1;
+}
 @media only screen and (max-width: 600px) {
   .card {
     margin-left: 5px;
