@@ -99,6 +99,7 @@ export default {
         });
     },
     changeNumber(num) {
+      this.selectedCard = '';
       this.pageNum = num;
       this.results = [];
       this.$router.push({
